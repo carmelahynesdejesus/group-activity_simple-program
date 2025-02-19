@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+int main ()
+{
+//Declare variables
+    double pounds, grams, kilograms;
+//Declare constants
+    const double LB2GRM = 453.592;
+//Give title to program
+    cout << "Pound to kilograms converter" << endl;
+//Prompt the user to enter a weight
+    cout << "Please enter a weight in pounds: " << endl;
+    cin >> pounds;
+//Displaying weight with two decimal points
+    cout << setiosflags(ios::showpoint) << setprecision(2);
+//Round off weight
+    static_cast<double>(static_cast<double>(pounds +.5));
+//Formula for conerversion
+    double fmod(pounds * LB2GRM);
+    cin >> grams;
+//Show results
+    cout << pounds << " pounds are equal to " << kilograms << " kgs and " << grams << " grams" << endl;
+
+return 0;
+}
